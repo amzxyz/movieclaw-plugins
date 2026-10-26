@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "generated_at": "2026-10-26T02:11:26Z",
+  "generated_at": "2026-10-26T02:12:18Z",
   "signed": true,
   "key_id": "catalog-1",
   "repository": "https://github.com/movieclaw/movieclaw-plugins",
@@ -702,8 +702,8 @@
       "deprecated": null,
       "feedback_url": "https://github.com/movieclaw/movieclaw-plugins/issues/new?template=plugin-feedback.yml&plugin=platform-discovery",
       "downloads": 18,
-      "latest": "0.1.0",
-      "latest_stable": "0.1.0",
+      "latest": "0.2.1",
+      "latest_stable": "0.2.1",
       "versions": [
         {
           "version": "0.11.1",
@@ -796,6 +796,51 @@
               "url": "https://github.com/movieclaw/movieclaw-plugins/releases/download/platform-discovery-v0.11.0/platform-discovery-0.11.0.mcplugin",
               "sha256": "888f754774dd23fd6106a02ee95cf477a0f34d2ce8fe9a0589bf509937b5b37f",
               "size": 353091
+            }
+          ]
+        },
+        {
+          "version": "0.2.1",
+          "prerelease": false,
+          "released_at": "2026-10-26T02:12:18Z",
+          "yanked": null,
+          "notes": "- 修复提交操作时网络中断提示直接重试的问题：明确提示结果可能已提交，应先检查状态；写请求仍不自动重试。\n- 统一发布编号为 0.2.1，保留内部标识、权限、配置字段、账号作用域、偏好、片单与缓存；历史 0.11.x 安装需手动批准切换。\n",
+          "changelog_url": "https://github.com/movieclaw/movieclaw-plugins/releases/tag/platform-discovery-v0.2.1",
+          "source_url": "https://github.com/movieclaw/movieclaw-plugins/tree/platform-discovery-v0.2.1/plugins/platform-discovery",
+          "readme": {
+            "url": "https://raw.githubusercontent.com/movieclaw/movieclaw-plugins/platform-discovery-v0.2.1/plugins/platform-discovery/README.md",
+            "sha256": "e5173794ee30b317de7e74d78339a9a3e5c29732e87fdbdfe3f42176a10e9007",
+            "size": 13088
+          },
+          "runtime": "inline",
+          "sdk": "^1.0",
+          "requires": {
+            "host-ops": "^1.0",
+            "plugin-routes": "^1.0",
+            "plugin-data": "^1.0"
+          },
+          "platforms": [
+            "any"
+          ],
+          "permissions": {
+            "operations": [
+              "discover.get-title-details",
+              "discover.filter-titles"
+            ],
+            "paths": [],
+            "network": true,
+            "callbacks": [],
+            "events": []
+          },
+          "web": true,
+          "dependencies": null,
+          "artifacts": [
+            {
+              "platform": "any",
+              "filename": "platform-discovery-0.2.1.mcplugin",
+              "url": "https://github.com/movieclaw/movieclaw-plugins/releases/download/platform-discovery-v0.2.1/platform-discovery-0.2.1.mcplugin",
+              "sha256": "f08e6d8ee3d56d0e8c630f262825b587ad79f635237dad7b428caf742179942f",
+              "size": 356749
             }
           ]
         },
