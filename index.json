@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "generated_at": "2026-10-26T02:17:28Z",
+  "generated_at": "2026-10-26T02:21:56Z",
   "signed": true,
   "key_id": "catalog-1",
   "repository": "https://github.com/movieclaw/movieclaw-plugins",
@@ -1081,6 +1081,77 @@
               "url": "https://github.com/movieclaw/movieclaw-plugins/releases/download/platform-discovery-v0.1.0/platform-discovery-0.1.0.mcplugin",
               "sha256": "74896dd3c98a18b1b505a430ac17b6ff2b9dc0cdbabf9ddb0fd8323f25a10c22",
               "size": 355881
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt-keepalive",
+      "name": "PT 站点保活",
+      "summary": "PT 站点保活：借宿主登录态定时访问已配置站点、尝试签到、刷新最后活跃时间，凭据失效主动告警。",
+      "description": "对已配置的 PT 站点定时保活：NexusPHP 站借宿主会话确认登录态并签到，M-Team 用账号密码+TOTP 登录刷新最后活跃时间；凭据失效及时告警。需要宿主支持 site.proxy.request 操作。",
+      "category": "tools",
+      "author": {
+        "name": "MovieClaw",
+        "url": null
+      },
+      "homepage": "https://github.com/movieclaw/movieclaw-plugins/tree/main/plugins/pt-keepalive",
+      "repository": "https://github.com/movieclaw/movieclaw-plugins/tree/main/plugins/pt-keepalive",
+      "license": "见仓库许可证",
+      "origin": "official",
+      "icon": null,
+      "screenshots": [],
+      "deprecated": null,
+      "feedback_url": "https://github.com/movieclaw/movieclaw-plugins/issues/new?template=plugin-feedback.yml&plugin=pt-keepalive",
+      "downloads": 0,
+      "latest": "0.2.2",
+      "latest_stable": "0.2.2",
+      "versions": [
+        {
+          "version": "0.2.2",
+          "prerelease": false,
+          "released_at": "2026-10-26T02:21:56Z",
+          "yanked": null,
+          "notes": "**移除插件设置里的「每天发保活日报」开关**。它和「账号 → 通知」里\n「插件 · PT 站点保活 → PT 保活日报」的开关管同一件事、互相不知道：两边都开才有日报，\n关掉任何一个都静默无声——两个开关问的是不同层面的问题（事件发不发 / 这个人收不收），\n但「发不发」对日报没有意义，宿主的通知模型里也不该有这一层。\n\n- 日报现在每轮都发布，**收不收只看「账号 → 通知」里的开关**（默认关，打开后每天一条）。\n  那里现在是唯一的日报开关；插件设置里不再有重复项。\n- 以前在插件里开过日报的：到「账号 → 通知」打开「PT 保活日报」即可，旧设置值不用清理\n  （插件已不读这个字段）。\n- **连续失败升级告警不再依赖日报开关**。以前日报开着就不发升级（失败明细只在日报里），\n  现在两条独立发布：升级照旧「同一段失败只报一次」、level=active，日报每天一条被动汇总。\n",
+          "changelog_url": "https://github.com/movieclaw/movieclaw-plugins/releases/tag/pt-keepalive-v0.2.2",
+          "source_url": "https://github.com/movieclaw/movieclaw-plugins/tree/pt-keepalive-v0.2.2/plugins/pt-keepalive",
+          "readme": {
+            "url": "https://raw.githubusercontent.com/movieclaw/movieclaw-plugins/pt-keepalive-v0.2.2/plugins/pt-keepalive/README.md",
+            "sha256": "6ce3122256744b810b49095f70578fb3fbada29ae48e2755d46c31a9730e9ff8",
+            "size": 9265
+          },
+          "runtime": "process",
+          "sdk": "^1.0",
+          "requires": {
+            "scheduled-tasks": "^1.0",
+            "plugin-events": "^1.0",
+            "plugin-data": "^1.0",
+            "plugin-routes": "^1.0"
+          },
+          "platforms": [
+            "any"
+          ],
+          "permissions": {
+            "operations": [
+              "site.list",
+              "site.catalog",
+              "site.proxy.request"
+            ],
+            "paths": [],
+            "network": true,
+            "callbacks": [],
+            "events": []
+          },
+          "web": false,
+          "dependencies": null,
+          "artifacts": [
+            {
+              "platform": "any",
+              "filename": "pt-keepalive-0.2.2.mcplugin",
+              "url": "https://github.com/movieclaw/movieclaw-plugins/releases/download/pt-keepalive-v0.2.2/pt-keepalive-0.2.2.mcplugin",
+              "sha256": "5e672eac5b20b68d8be9aeee537b8737573f32d8ee54e1326dd45b7df56b96aa",
+              "size": 57620
             }
           ]
         }
