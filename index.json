@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "generated_at": "2026-10-26T02:12:18Z",
+  "generated_at": "2026-10-26T02:13:12Z",
   "signed": true,
   "key_id": "catalog-1",
   "repository": "https://github.com/movieclaw/movieclaw-plugins",
@@ -370,9 +370,60 @@
       "deprecated": null,
       "feedback_url": "https://github.com/movieclaw/movieclaw-plugins/issues/new?template=plugin-feedback.yml&plugin=movie-voice",
       "downloads": 9,
-      "latest": "0.1.2",
-      "latest_stable": "0.1.2",
+      "latest": "0.2.1",
+      "latest_stable": "0.2.1",
       "versions": [
+        {
+          "version": "0.2.1",
+          "prerelease": false,
+          "released_at": "2026-10-26T02:13:12Z",
+          "yanked": null,
+          "notes": "- 修复等待库存核对时关闭详情弹窗仍可能创建订阅的问题；关闭按钮和 Esc 均会终止尚未提交的订阅。\n- 统一发布编号为 0.2.1，保留插件标识、权限、原配置、能力链接和签名快捷指令。\n",
+          "changelog_url": "https://github.com/movieclaw/movieclaw-plugins/releases/tag/movie-voice-v0.2.1",
+          "source_url": "https://github.com/movieclaw/movieclaw-plugins/tree/movie-voice-v0.2.1/plugins/movie-voice",
+          "readme": {
+            "url": "https://raw.githubusercontent.com/movieclaw/movieclaw-plugins/movie-voice-v0.2.1/plugins/movie-voice/README.md",
+            "sha256": "88d52217c5f408bfb2d75632f8d439544ae611095ee3c2369b414f43794b0714",
+            "size": 9322
+          },
+          "runtime": "process",
+          "sdk": "^1.0",
+          "requires": {
+            "agent": "^1.0",
+            "host-ops": "^1.0",
+            "plugin-routes": "^1.0",
+            "plugin-events": "^1.0",
+            "plugin-data": "^1.0"
+          },
+          "platforms": [
+            "any"
+          ],
+          "permissions": {
+            "operations": [
+              "agent:none",
+              "library.items.get",
+              "search.library",
+              "search.titles",
+              "discover.get-title-details",
+              "subscriptions.create"
+            ],
+            "paths": [],
+            "network": true,
+            "callbacks": [],
+            "events": []
+          },
+          "web": true,
+          "dependencies": null,
+          "artifacts": [
+            {
+              "platform": "any",
+              "filename": "movie-voice-0.2.1.mcplugin",
+              "url": "https://github.com/movieclaw/movieclaw-plugins/releases/download/movie-voice-v0.2.1/movie-voice-0.2.1.mcplugin",
+              "sha256": "f6d8de2e65c38c10227cd3ff3c7de45a85e0073f96c97a79743f39ff33c0151c",
+              "size": 168343
+            }
+          ]
+        },
         {
           "version": "0.1.2",
           "prerelease": false,
