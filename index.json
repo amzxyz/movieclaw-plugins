@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "generated_at": "2026-10-26T02:10:09Z",
+  "generated_at": "2026-10-26T02:11:26Z",
   "signed": true,
   "key_id": "catalog-1",
   "repository": "https://github.com/movieclaw/movieclaw-plugins",
@@ -1390,9 +1390,55 @@
       "deprecated": null,
       "feedback_url": "https://github.com/movieclaw/movieclaw-plugins/issues/new?template=plugin-feedback.yml&plugin=watch-friends",
       "downloads": 10,
-      "latest": "0.1.2",
-      "latest_stable": "0.1.2",
+      "latest": "0.2.1",
+      "latest_stable": "0.2.1",
       "versions": [
+        {
+          "version": "0.2.1",
+          "prerelease": false,
+          "released_at": "2026-10-26T02:11:26Z",
+          "yanked": null,
+          "notes": "- 修复浏览器前进后退恢复缓存页面后主题不再同步的问题，恢复时重新读取宿主主题并继续监听。\n- 统一发布编号为 0.2.1，保留原观影记录、配置、好友和互联授权，无需卸载或迁移。\n",
+          "changelog_url": "https://github.com/movieclaw/movieclaw-plugins/releases/tag/watch-friends-v0.2.1",
+          "source_url": "https://github.com/movieclaw/movieclaw-plugins/tree/watch-friends-v0.2.1/plugins/watch-friends",
+          "readme": {
+            "url": "https://raw.githubusercontent.com/movieclaw/movieclaw-plugins/watch-friends-v0.2.1/plugins/watch-friends/README.md",
+            "sha256": "522087b7fa62faf2dbdfa57af41eeec1e7436fb0edfa519d35cc6134895cf113",
+            "size": 44435
+          },
+          "runtime": "inline",
+          "sdk": "^1.0",
+          "requires": {
+            "host-ops": "^1.0",
+            "plugin-routes": "^1.0",
+            "plugin-files": "^1.0"
+          },
+          "platforms": [
+            "any"
+          ],
+          "permissions": {
+            "operations": [
+              "members.list",
+              "playback.history",
+              "search.library"
+            ],
+            "paths": [],
+            "network": true,
+            "callbacks": [],
+            "events": []
+          },
+          "web": true,
+          "dependencies": null,
+          "artifacts": [
+            {
+              "platform": "any",
+              "filename": "watch-friends-0.2.1.mcplugin",
+              "url": "https://github.com/movieclaw/movieclaw-plugins/releases/download/watch-friends-v0.2.1/watch-friends-0.2.1.mcplugin",
+              "sha256": "8687a57600d1b4bd5152ab5ee0c23ffdc8d5d8745904cb38a9ca5f95b8c64089",
+              "size": 947420
+            }
+          ]
+        },
         {
           "version": "0.1.2",
           "prerelease": false,
