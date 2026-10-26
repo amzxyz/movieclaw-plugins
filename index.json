@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "generated_at": "2026-10-25T13:10:41Z",
+  "generated_at": "2026-10-26T02:10:09Z",
   "signed": true,
   "key_id": "catalog-1",
   "repository": "https://github.com/movieclaw/movieclaw-plugins",
@@ -27,7 +27,7 @@
       "screenshots": [],
       "deprecated": null,
       "feedback_url": "https://github.com/movieclaw/movieclaw-plugins/issues/new?template=plugin-feedback.yml&plugin=cloud-115",
-      "downloads": 42,
+      "downloads": 43,
       "latest": "0.1.0-beta.2",
       "latest_stable": null,
       "versions": [
@@ -261,10 +261,50 @@
       "screenshots": [],
       "deprecated": null,
       "feedback_url": "https://github.com/movieclaw/movieclaw-plugins/issues/new?template=plugin-feedback.yml&plugin=douban-rank-subscribe",
-      "downloads": 1,
-      "latest": "1.0.0",
-      "latest_stable": "1.0.0",
+      "downloads": 3,
+      "latest": "1.0.1",
+      "latest_stable": "1.0.1",
       "versions": [
+        {
+          "version": "1.0.1",
+          "prerelease": false,
+          "released_at": "2026-10-26T02:10:09Z",
+          "yanked": null,
+          "notes": "- 新增「自动订阅」总开关：关掉后定时任务不再自动下单，「立即扫描」也被拦下；\n  海报上的手动「订阅」不受影响。\n- 移除「实时热门电影」榜单。\n- 卡片角标按统一版式规范调整：评分用 `.score`、状态用 `.status`（右上评分、底部居中状态），\n  状态最多显示一个，已入库优先。状态角标配色：已订阅红底白字、已入库绿底白字。\n- 分段标签右侧不再显示启用的榜单名。\n- 详情弹窗：去掉 header 和右上角关闭；海报铺满顶部、模糊处理、上下渐变过渡；\n  白边改为独立描边层，滚动与圆角都完整，海报与正文之间不再有分隔白线。\n- 状态角标去掉小圆点，改为纯文字（配色仍为已订阅红底白字、已入库绿底白字）。\n- 详情弹窗去掉「海报→标题」和「正文→按钮区」的白色分隔线，海报渐变柔和过渡到正文。\n- 手机端一行三张海报，且不再显示右侧滚动条。\n",
+          "changelog_url": "https://github.com/movieclaw/movieclaw-plugins/releases/tag/douban-rank-subscribe-v1.0.1",
+          "source_url": "https://github.com/movieclaw/movieclaw-plugins/tree/douban-rank-subscribe-v1.0.1/plugins/douban-rank-subscribe",
+          "readme": null,
+          "runtime": "process",
+          "sdk": "^1.0",
+          "requires": {
+            "scheduled-tasks": "^1.0"
+          },
+          "platforms": [
+            "any"
+          ],
+          "permissions": {
+            "operations": [
+              "discover.browse-collection",
+              "search.titles",
+              "subscriptions.create"
+            ],
+            "paths": [],
+            "network": true,
+            "callbacks": [],
+            "events": []
+          },
+          "web": true,
+          "dependencies": null,
+          "artifacts": [
+            {
+              "platform": "any",
+              "filename": "douban-rank-subscribe-1.0.1.mcplugin",
+              "url": "https://github.com/movieclaw/movieclaw-plugins/releases/download/douban-rank-subscribe-v1.0.1/douban-rank-subscribe-1.0.1.mcplugin",
+              "sha256": "91b6a74ecadd64886a11c9cafe0b7c38468f1777b998e3cabc81a3b225291789",
+              "size": 54700
+            }
+          ]
+        },
         {
           "version": "1.0.0",
           "prerelease": false,
@@ -329,7 +369,7 @@
       "screenshots": [],
       "deprecated": null,
       "feedback_url": "https://github.com/movieclaw/movieclaw-plugins/issues/new?template=plugin-feedback.yml&plugin=movie-voice",
-      "downloads": 6,
+      "downloads": 9,
       "latest": "0.1.2",
       "latest_stable": "0.1.2",
       "versions": [
@@ -661,7 +701,7 @@
       "screenshots": [],
       "deprecated": null,
       "feedback_url": "https://github.com/movieclaw/movieclaw-plugins/issues/new?template=plugin-feedback.yml&plugin=platform-discovery",
-      "downloads": 17,
+      "downloads": 18,
       "latest": "0.1.0",
       "latest_stable": "0.1.0",
       "versions": [
@@ -828,7 +868,7 @@
       "screenshots": [],
       "deprecated": null,
       "feedback_url": "https://github.com/movieclaw/movieclaw-plugins/issues/new?template=plugin-feedback.yml&plugin=pt-site-pack",
-      "downloads": 11,
+      "downloads": 15,
       "latest": "0.1.2",
       "latest_stable": "0.1.2",
       "versions": [
@@ -1020,7 +1060,7 @@
       "screenshots": [],
       "deprecated": null,
       "feedback_url": "https://github.com/movieclaw/movieclaw-plugins/issues/new?template=plugin-feedback.yml&plugin=seed-hub",
-      "downloads": 0,
+      "downloads": 1,
       "latest": "1.0.0",
       "latest_stable": "1.0.0",
       "versions": [
@@ -1257,7 +1297,7 @@
       "screenshots": [],
       "deprecated": null,
       "feedback_url": "https://github.com/movieclaw/movieclaw-plugins/issues/new?template=plugin-feedback.yml&plugin=tv-home",
-      "downloads": 0,
+      "downloads": 1,
       "latest": "0.1.0",
       "latest_stable": "0.1.0",
       "versions": [
@@ -1349,7 +1389,7 @@
       "screenshots": [],
       "deprecated": null,
       "feedback_url": "https://github.com/movieclaw/movieclaw-plugins/issues/new?template=plugin-feedback.yml&plugin=watch-friends",
-      "downloads": 8,
+      "downloads": 10,
       "latest": "0.1.2",
       "latest_stable": "0.1.2",
       "versions": [
